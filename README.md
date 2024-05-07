@@ -1,4 +1,4 @@
-## EXNO-3-DS
+## EXNO-3-Feature Encoding and Transformation
 
 # AIM:
 To read the given data and perform Feature Encoding and Transformation process and save the data to a file.
@@ -149,12 +149,12 @@ import matplotlib.pyplot as plt
 sm.qqplot(df["Moderate Negative Skew"],line='45')
 plt.show()
 ```
-![image](https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/db9383e3-08e3-4b0d-8cf9-7d730479ba15)
+<img src="https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/db9383e3-08e3-4b0d-8cf9-7d730479ba15" width="400" height="300">
 ```
 sm.qqplot(np.reciprocal(df["Moderate Negative Skew"]),line='45')
 plt.show()
 ```
-![image](https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/35c3c643-d659-45a2-b41c-825f708bb77a)
+<img src="https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/35c3c643-d659-45a2-b41c-825f708bb77a" width="400" height="300">
 ```
 from sklearn.preprocessing import QuantileTransformer
 qt=QuantileTransformer(output_distribution='normal',n_quantiles=891)
@@ -164,18 +164,18 @@ df["Moderate Negative Skew"]=qt.fit_transform(df[["Moderate Negative Skew"]])
 sm.qqplot(df["Moderate Negative Skew"],line='45')
 plt.show()
 ```
-![image](https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/f7660654-7cda-403c-80d2-076de26be3ec)
+<img src="https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/f7660654-7cda-403c-80d2-076de26be3ec" width="400" height="300">
 ```
 df["Highly Negative Skew_1"]=qt.fit_transform(df[["Highly Negative Skew"]])
 sm.qqplot(df["Highly Negative Skew"],line='45')
 plt.show()
 ```
-![image](https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/2a80dd6d-d895-4ff2-bcf2-366cb4a048be)
+<img src="https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/2a80dd6d-d895-4ff2-bcf2-366cb4a048be" width="400" heigth="300">
 ```
 sm.qqplot(df["Highly Negative Skew_1"],line='45')
 plt.show()
 ```
-![image](https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/fa3211cb-c8b8-4b8d-8719-b944a75e3c8d)
+<img src="https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/fa3211cb-c8b8-4b8d-8719-b944a75e3c8d" width="400" height="300">
 
 
 # RESULT:
