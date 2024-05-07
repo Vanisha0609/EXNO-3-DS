@@ -170,6 +170,7 @@ df["Highly Negative Skew_1"]=qt.fit_transform(df[["Highly Negative Skew"]])
 sm.qqplot(df["Highly Negative Skew"],line='45')
 plt.show()
 ```
+
 <img src="https://github.com/Vanisha0609/EXNO-3-DS/assets/119104009/2a80dd6d-d895-4ff2-bcf2-366cb4a048be" width="400" heigth="300">
 
 ```
